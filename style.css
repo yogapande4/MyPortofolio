@@ -198,7 +198,6 @@ body {
 
 .portofolio-item {
     position: relative;
-    overflow: hidden;
     border-radius: 10px;
 }
 
@@ -207,7 +206,8 @@ body {
     display: block;
     border-radius: 10px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.4);
-    transition: 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    margin-bottom: 8px;
 }
 
 .overlay {
@@ -235,5 +235,44 @@ body {
 }
 
 .portofolio-item img:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+}
+
+.project-title {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.accordion {
+    margin-top: 10px;
+}
+
+.accordion-btn {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    background: #d85b6a;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.accordion-btn:hover {
+    opacity: 0.9;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 6px;
+    margin-top: 3px;
+    padding: 0 10px;
+    transition: max-height 0.3 ease;
 }

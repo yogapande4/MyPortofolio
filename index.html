@@ -40,6 +40,9 @@
                     <a href="http://www.linkedin.com/in/pande-yoga-64a49a271" target="_blank">
                         <img class="sosmed-icon" src="linkedin_logo.png" alt="Linkedin">
                     </a>
+                    <a href="https://github.com/yogapande4" target="_blank">
+                        <img class="sosmed-icon" src="github_logo.png" alt="Github">
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
@@ -104,28 +107,105 @@
 
                     <div class="portofolio-item">
                         <img src="portofolio_1.jpg" alt="project 1">
-                        <div class="overlay"> Desain kaos bertema dark illustration yang saya 
-                            <br> buat untuk kebutuhan brand clothing.
-                            Proses desain 
-                            <br>dilakukan menggunakan Adobe Illustrator dan 
-                            <br> Photoshop, mulai dari pembuatan sketsa awal, 
-                            pewarnaan, hingga final rendering. Karya ini 
-                            <br> mengangkat konsep karakter dan elemen 
-                            artistik yang 
-                            <br> digabungkan dengan tipografi untuk menghasilkan tampilan visual
-                             yang kuat dan 
-                            estetik.</div>
+                        <div class="project-title"> Desain Kaos Dark Illustration </div>
+                        <div class="accordion">
+
+                            <button class="accordion-btn">Situation</button>
+                            <div class="accordion-content">
+                                client membutuhkan desain kaos bertema dark dengan identitas visual yang kuat.
+                            </div>
+                            
+                            <button class="accordion-btn">Task</button>
+                            <div class="accordion-content">
+                                Saya diminta membuat ilustrasi utama sekaligus menyusun komposisi tipografi pada desain kaos.
+                            </div>
+                            
+                            <button class="accordion-btn">Action</button>
+                            <div class="accordion-content">
+                                Membuat sketsa, digitalisasi ilustrasi, dan pewarnaan pada Adobe Illustrator, finishing di Photoshop.
+                            </div>
+
+                            <button class="accordion-btn">Result</button>
+                            <div class="accordion-content">
+                                Desain diterima client dan diproduksi sebagai salah satu seri kaos bertema dark illustration.
+                            </div>
+                        </div>
                     </div>
+
                     <div class="portofolio-item">
                         <img src="portofolio_2.jpg" alt="project 2">
-                        <div class="overlay"> Desain ini merupakan frame untuk postingan feed Instagram sebuah toko vape, dibuat dengan pendekatan visual yang modern dan clean. Elemen-elemen grafis dirancang agar menonjolkan produk sekaligus menjaga konsistensi identitas brand. Penggunaan warna kontras, layout yang simetris, serta tipografi yang tegas bertujuan menciptakan tampilan yang menarik perhatian saat berselancar di feed.</div>
+                        <div class="project-title"> Desain Frame Feed Instagram Vape Store </div>
+                        
+                        <div class="accordion">
+
+                            <button class="accordion-btn">Situation</button>
+                            <div class="accordion-content">
+                                Sebuah toko vape membutuhkan template postingan Instagram agar tampilan feed lebih konsisten dan menarik.
+                            </div>
+                            
+                            <button class="accordion-btn">Task</button>
+                            <div class="accordion-content">
+                                Saya diminta membuat desain frame yang modern, mudah digunakan berulang, dan tetap sesuai identitas brand.
+                            </div>
+                            
+                            <button class="accordion-btn">Action</button>
+                            <div class="accordion-content">
+                                Menentukan layout grid, memilih warna kontras, menyusun tipografi, dan menyiapkan file editable untuk keperluan posting rutin.
+                            </div>
+
+                            <button class="accordion-btn">Result</button>
+                            <div class="accordion-content">
+                                Desain digunakan pada beberapa konten promosi, meningkatkan kerapihan feed dan interaksi pengguna di Instagram.
+                            </div>
+                        </div>
                     </div>
+
                     <div class="portofolio-item">
                         <img src="portofolio_3.jpg" alt="project 3">
-                        <div class="overlay"> Desain kaos polo ini menampilkan kombinasi warna putih dengan aksen motif etnik pada bagian panel depan, lengan, dan kerah. Sentuhan motif tersebut memberikan kesan elegan dan unik tanpa menghilangkan nuansa modern. Proses desain dibuat menggunakan Adobe Illustrator dan Photoshop untuk menghasilkan tampilan mockup yang rapi dan realistis.</div>
+                        <div class="project-title"> Desain Kaos Polo Motif Endek Modern </div>
+                        
+                        <div class="accordion">
+                            
+                            <button class="accordion-btn">Situation</button>
+                            <div class="accordion-content">
+                                Klien membutuhkan desain kaos polo dengan sentuhan motif Endek yang tetap terlihat modern dan elegan.
+                            </div>
+
+                            <button class="accordion-btn">Task</button>
+                            <div class="accordion-content">
+                                Saya bertugas merancang motif Endek, menentukan kombinasi warna, serta membuat mockup produk yang realistis.
+                            </div>
+
+                            <button class="accordion-btn">Action</button>
+                            <div class="accordion-content">
+                                Mendesain pola pada Illustrator, melakukan komposisi pada polo, serta membuat visualisasi produk melalui mockup.
+                            </div>
+
+                            <button class="accordion-btn">Result</button>
+                            <div class="accordion-content">
+                                Desain berhasil dipresentasikan kepada klien dan mendapatkan umpan balik positif sebagai bahan produksi selanjutnya.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <script>
+            const buttons = document.querySelectorAll(".accordion-btn");
+
+            buttons.forEach(btn => {
+                btn.addEventListener("click", () => {
+
+                    const content = btn.nextElementSibling;
+
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
